@@ -1,0 +1,370 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.textarea{
+    width:100%;
+    border:none;
+  }
+  .search-definition-big{
+    color : #69717d;
+    margin-left: 30%;
+    width: 40%;
+
+  }
+  .search-definition-short{
+    color : #69717d;
+    font-size:smaller;
+    display:block;
+  }
+
+  .div-word {
+    float:left;
+
+  }
+  .div-global {
+    border-bottom: 1px solid #dedede;
+    position :inherit;
+
+  }
+  .div-left {
+    text-align:left;
+    max-width:60%;
+
+  }
+  .div-right {
+    max-width:30%;
+    text-align:right;
+  }
+
+  .spinner-container {
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+
+  }
+  .help-button{
+    text-align:right;
+
+    width: 25%;
+    padding:7%;
+  }
+
+  .flag-logo {
+    color: white;
+    padding-right:5%;
+    font-size: larger;
+
+  }
+  .search-buttons {
+    text-align:right;
+    width: auto;
+
+  }
+  .ex-buttons {
+    font-size: x-large;
+    margin-bottom:20%;
+    padding: 8vmin;
+  }
+
+  .true{
+    -webkit-transition:background-color 0.4s;
+    background-color : #8bc34a;
+    color :white;
+  }
+  .false{
+    -webkit-transition:background-color 0.4s;
+    background-color : #e57373;
+    color :white;
+  }
+  .lesson-title {
+
+    font-size:large;
+  }
+  .trad {
+    color:#A9A9A9;
+
+  }
+  .more-less {
+    color: #A9A9A9;
+  }
+
+  .div-slide-word {
+    text-align:center;
+    margin-bottom:20%;
+    margin-top:25%;
+  }
+  .div-slide-conjug {
+    text-align:center;
+    margin-bottom:4%;
+    margin-top:4%;
+  }
+
+  .div-slide-title {
+    text-align:center !important;
+    position:inherit;
+    padding-top :2%;
+    display: inline-block;
+    width:100%;
+    font-size: large;
+    border-top: 2px dashed #A9A9A9;
+  }
+
+
+  .div-slide-answer {
+    text-align:center;
+    margin-bottom:10%;
+    margin-top:2%;
+  }
+
+  .level-ex {
+    color:#A9A9A9;
+    font-size:smaller;
+   float: right;
+  }
+  .trad-ex{
+
+    color:#A9A9A9;
+  }
+
+
+  .tmp-ion-footer {
+    color: #6d6d72;
+    padding : 0 15px;
+    margin-top: 8px;
+    padding-bottom: 3px;
+  }
+
+  .item p{
+    color: #000000;
+    font-size: 1.4rem;
+  }
+
+  .list[mode=ios] .item:after{
+    border-top: none;
+  }
+
+  .grid{
+    padding-right:5%
+  }
+  //colors
+  $black:  black;
+  $color_cinnabar_approx: #e74c3c;
+  $color_eucalyptus_approx: #1f8b4d;
+  $color_suva_gray_approx: #888;
+
+  .find-group{
+    padding-left: 1em;
+    padding-right: 1em;
+    .input{
+      margin-left: 1em;
+    }
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
+  }
+  .vb-expl{
+    padding-top: 1em;
+  }
+  .tabbed {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.4rem;
+  }
+  .item-content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .bold-italic {
+    font-weight: bold;
+    font-style: italic;
+  }
+  .centered-text {
+    text-align: center;
+  }
+  .underlined {
+    border-bottom: 1px solid $black;
+  }
+  .underlined-spe-term {
+    border-bottom: 1px dotted $color_cinnabar_approx;
+  }
+  .basic-underlined {
+    text-decoration: underline;
+  }
+  .verb-stem {
+    font-weight: bold;
+    color: $color_eucalyptus_approx;
+  }
+  .verb-termination {
+    font-weight: bold;
+    color: $color_cinnabar_approx;
+  }
+  .left-text {
+    text-align: left;
+  }
+  .right-text {
+    text-align: right;
+  }
+  .row {
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    //border-collapse: seperate;
+    border-spacing: 8px 0;
+    padding: 4px;
+  }
+  .cell {
+    font-size: 2.5vmin;
+    display: table-cell;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    border-radius: 6px;
+    margin-right: 8px;
+    padding: 6px;
+    &.cell-nowrap {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &.cell-valign-middle {
+      vertical-align: middle;
+      justify-content: center;
+    }
+    &.cell-valign-bottom {
+      vertical-align: bottom;
+      justify-content: flex-end;
+    }
+    &.cell-align-center {
+      text-align: center;
+    }
+    &.cell-align-right {
+      text-align: right;
+    }
+    &.cell-100px {
+      flex: none;
+      width: 100px;
+      max-width: 100px;
+    }
+  }
+  @supports(display: flex) {
+    .row {
+      display: flex;
+    }
+    .cell {
+      display: block;
+    }
+    .cell-valign-middle {
+      display: flex;
+    }
+    .cell-valign-bottom {
+      display: flex;
+    }
+  }
+  .cell-min {
+    width: 1%;
+    flex: none auto;
+  }
+  .cell-max {
+    width: 100%;
+    flex: 1 100%;
+  }
+  .finnco_img_popup{
+    max-width: 30%;
+    height: auto;
+    width: auto;
+  }
+  .finnco_desc_popup{
+    text-align: justify;
+  }
+  .finnco_img_ico{
+    margin-top:1.5%;
+    max-width: 5%;
+    height: auto;
+    width: auto;
+  }
+
+  .finnco_using_app{
+    margin-top:10%;
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: 0;
+  }
+
+  .search-item {
+      border-bottom: 1px solid #dedede;
+      .item-inner {
+        border-bottom: none !important;
+      }
+  }
+
+  .verb_conj {
+    letter-spacing: 0.075em;
+  }
+
+  .strikethrough {
+    position: relative;
+  }
+  .strikethrough:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 0.25rem solid;
+    border-color: #000000;
+
+    -webkit-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    transform:rotate(-20deg);
+  }
+
+  .strikethrough-table {
+    position: relative;
+  }
+  .strikethrough-table:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 0.50vmin solid;
+    border-color: #000000;
+    -webkit-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    transform:rotate(-20deg);
+  }

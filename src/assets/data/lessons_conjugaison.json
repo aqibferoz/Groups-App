@@ -1,0 +1,79 @@
+{
+  "lessons": [
+    { "level":2,
+      "random":false,
+      "content": [
+        {
+          "word":"saada",
+          "pers":1
+        },
+        {
+          "word":"sanoa",
+          "pers":2
+        },
+        {
+          "word":"käydä",
+          "pers":3
+        },
+        {
+          "word":"maksaa",
+          "pers":0
+        },
+        {
+          "word":"tuoda",
+          "pers":4
+        }
+      ]
+    },
+    { "level":2,
+      "random":false,
+      "content": [
+        {
+          "word":"toimia",
+          "pers":3
+        },
+        {
+          "word":"käydä",
+          "pers":5
+        },
+        {
+          "word":"odottaa",
+          "pers":4
+        },
+        {
+          "word":"uskoa",
+          "pers":1
+        },
+        {
+          "word":"kuulua",
+          "pers":2
+        }
+      ]
+    },
+    { "level":2,
+      "random":false,
+      "content": [
+        {
+          "word":"tulla",
+          "pers":1
+        },
+        {
+          "word":"pitää",
+          "pers":3
+        },
+        {
+          "word":"vanuttaa",
+          "pers":4
+        },
+        {
+          "word":"vaatia",
+          "pers":2
+        },
+        {
+          "word":"löytyä",
+          "pers":6
+        }
+      ]
+    }
+  ]
+}
