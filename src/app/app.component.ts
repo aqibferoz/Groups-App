@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 
-import { Platform, NavController, MenuController } from '@ionic/angular';
+import { Platform, NavController, MenuController} from '@ionic/angular';
 
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -23,15 +23,50 @@ import { AboutPageModule } from './pages/common/about/about.module';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
-      url: '/home',
-      icon: 'home'
+      title: 'Group Finder',
+      url: '/group-finder',
+      icon: 'search'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+      title: 'Verbs Groups',
+      url: '/verb-group-menu',
+      icon: 'copy'
+    } ,
+    {
+      title: 'Exceptions',
+      url: '/exceptions',
+      icon: 'alert'
+    } ,
+    {
+      title: 'To have',
+      url: '/tohave',
+      icon: 'checkmark-circle'
+    } ,
+    {
+      title: 'Negative Form',
+      url: '/negativeform',
+      icon: 'close-circle'
+    },
+    {
+      title: 'Cons. gradation & vow. harmony',
+      url: '/constgradation',
+      icon: 'musical-notes'
+    } ,
+    {
+      title: 'Exercises',
+      url: '/exercises',
+      icon: 'book'
+    } ,
+    {
+      title: 'Conditional',
+      url: '/conditional',
+      icon: 'photos'
+    } ,
+    {
+      title: 'About',
+      url: '/about',
+      icon: 'md-information-circle'
+    } 
   ];
 
   @ViewChild(NavController) nav: NavController;
@@ -39,87 +74,26 @@ export class AppComponent {
   rootPage: any = GroupFinderPage;
 
   pages: Array<{ title: string, icon: string, component: any }>;
-  constructor(public platform: Platform, private menuCtrl: MenuController,
-    private statusBar: StatusBar, private splashScreen: SplashScreen, public currentView: CurrentViewServiceService
+  constructor(
   ) {
-    this.initializeApp();
+    // this.initializeApp();
 
-    this.pages = [
-      { title: 'Group Finder', icon: 'search', component: GroupFinderPageModule },
-      { title: 'Verb Groups', icon: 'ios-paper', component: VerbGroupMenuPageModule },
-      { title: 'Exceptions', icon: 'alert', component: DescExceptionsPresentPageModule },
-      { title: 'To have', icon: 'checkmark', component: DescTohavePresentPageModule },
-      { title: 'Negative form', icon: 'close-circle', component: DescNegativePresentPageModule },
-      { title: 'Cons. gradation & vow. harmony', icon: 'ios-musical-notes', component: DescConsVowPageModule },
-      { title: 'Exercises', icon: 'md-book', component: ExercisemenuPageModule },
-      { title: 'Conditional', icon: 'ios-paper', component: DescConditionalPresentPageModule },
-      { title: 'About', icon: 'information-circle', component: AboutPageModule }
+    // this.pages = [
+    //   { title: 'Group Finder', icon: 'search', component: GroupFinderPageModule },
+    //   { title: 'Verb Groups', icon: 'ios-paper', component: VerbGroupMenuPageModule },
+    //   { title: 'Exceptions', icon: 'alert', component: DescExceptionsPresentPageModule },
+    //   { title: 'To have', icon: 'checkmark', component: DescTohavePresentPageModule },
+    //   { title: 'Negative form', icon: 'close-circle', component: DescNegativePresentPageModule },
+    //   { title: 'Cons. gradation & vow. harmony', icon: 'ios-musical-notes', component: DescConsVowPageModule },
+    //   { title: 'Exercises', icon: 'md-book', component: ExercisemenuPageModule },
+    //   { title: 'Conditional', icon: 'ios-paper', component: DescConditionalPresentPageModule },
+    //   { title: 'About', icon: 'information-circle', component: AboutPageModule }
 
-    ];
+    // ];
 
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+  
 
-      this.statusBar.styleDefault();
-      // Splashscreen.hide();
-      this.splashScreen.hide();
-
-      // let view = this.nav.getActive();
-      // let currentRootPage = view.component.name;
-
-      this.nav.getByIndex(0).component.id = 1;
-      // console.log(this.nav.getActive().component.id);
-      this.platform.backButton.subscribe(() => {
-
-        let activePortal = this.ionicApp._loadingPortal.getActive() ||
-          this.ionicApp._modalPortal.getActive() ||
-          this.ionicApp._toastPortal.getActive() ||
-          this.ionicApp._overlayPortal.getActive();
-
-        let view = this.nav.getActive();
-        let currentRootPage = view.component;
-
-
-        if (activePortal) {
-          activePortal.dismiss();
-        }
-        else if (this.menuCtrl.isOpen()) {
-          this.menuCtrl.close();
-        }
-        else if (this.nav.canGoBack() || view && view.isOverlay) {
-          this.nav.pop();
-        }
-        else if (currentRootPage != this.pages[0].component) { // Could any other page that you consider as your main one
-          this.openPage(this.pages[0]);
-
-        }
-        else {
-          this.platform.exitApp();
-        }
-
-        return;
-
-      }, 1);
-
-    });
-  }
-
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    //this.currentView.currentPageTitle= page.title;
-    this.nav.setRoot(page.component);
-    this.currentView.currentPageTitle = page.title;
-    // console.log(this.nav.getByIndex(0));
-    if (page.title != 'Exercises') {
-      // this.adsAndRating.showAdAfterXSeconds(18)
-      //TODO Ad was called here
-      // PLEASE ADD THIS LIKE THAT, COMMENTED, IN THE IONIC 4 PORT
-      // THIS IS FOR FUTURE REFERENCE FOR ME TO ADD ADS SOMEDAY
-    }
-  }
+  
 }

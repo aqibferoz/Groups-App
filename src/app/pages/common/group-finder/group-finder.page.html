@@ -1,9 +1,84 @@
+
 <ion-header>
-  <ion-toolbar>
-    <ion-title>group-finder</ion-title>
+  <ion-toolbar color="">
+    <ion-menu-toggle>
+      <ion-button color="clear">
+        <ion-icon style="color: white !important;" slot="start" name="menu"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+    <ion-title>Group Finder</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+
+
+  <!-- <ion-list inset >
+
+    <ion-item>
+      <ion-label><b>Verb</b> :</ion-label>
+      <ion-input spellcheck="false" autocomplete="off" placeholder="{{display_placeholder}}" [(ngModel)]="searchValue" [formControl]="searchControl" (keyup.enter)="ProcessEnter(searchValue, current_verb_in_use_display[0], userinput)" (keyup)="onSearchInput(searchValue.length)" class="input-search" #inputfocusinit></ion-input>
+
+    </ion-item>
+    <div [hidden]="(!searching) || display_groupnb===0" class="spinner-container">
+        <ion-spinner ></ion-spinner>
+      </div>
+    <br>
+    <ion-list [hidden]="!typing">
+      <ion-item *ngFor="let verb of current_verb_in_use_display ; let i=index"  (click)="ProcessClick(verb)" class="search-item">
+              <div item-left col-8 >
+                <b>{{ verb.word}}</b>
+                <br>
+                <div class="search-definition-short" > {{ verb.translations}}
+                </div>
+              </div>
+              <div item-right class="search-buttons">
+                <button ion-button outline >Select</button>
+              </div>
+      </ion-item>
+
+
+        <ion-item>
+        <p>End of suggestions. You can enter <br>an unknown verb manually :)</p>
+      </ion-item>
+    </ion-list>
+
+  </ion-list>
+
+
+
+
+  <ion-card [hidden]="typing" class="ng-binding list card"  mode="ios" class="text-justify">
+
+    <div [hidden]="display_groupnb<=0" class="tabbed">
+      <div [hidden]="!show_trans">
+      <br> <p><b>Translations: </b></p>
+        <div *ngFor="let trans of display_trans; let i=index">
+          <div [hidden]="(i-1>0 && show)" class="trad">- {{trans}}</div>
+        </div>
+        <b><p [hidden]="!show_more_less" class="more-less" (click)="this.showTrans()">{{more_less}}...</p></b>
+
+
+      <br><p><b>{{display_type}}</b></p>
+    </div>
+      <br><span [hidden]="display_groupnb===-1">Group number : <b>{{display_groupnb}}</b></span>
+      <br><span [hidden]="!display_irrexpl"><br>{{display_irrexpl}}</span>
+      <span [hidden]="!cg_explanation || display_irrexpl"><br><span [innerHtml]="cg_explanation"></span><br></span>
+      <br><span [innerHtml]="display_expl"></span>
+      <br><br><button ion-button [hidden]="display_groupnb===-1" (click)="displayMore()" small outline>Help me to conjugate it</button>
+
+      <br>
+    </div>
+
+    <div class="card-footer">
+      <div class="tmp-ion-footer">
+        <p>{{display_inf}}</p>
+      </div>
+    </div>
+  </ion-card>
+
+  <img [hidden]="!display_finnco" class="finnco_using_app" src="assets/img/finnco_using_app.png" alt="Finnco"> -->
+
 
 </ion-content>
