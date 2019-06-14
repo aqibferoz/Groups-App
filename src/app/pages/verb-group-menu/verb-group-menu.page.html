@@ -1,14 +1,47 @@
 <ion-header>
   <ion-toolbar>
-    <ion-menu-toggle>
-      <ion-button color="clear">
-        <ion-icon style="color: white !important;" slot="start" name="menu"></ion-icon>
-      </ion-button>
-    </ion-menu-toggle>
+      <ion-buttons slot="start">
+          <ion-menu-button mode="ios"></ion-menu-button>
+        </ion-buttons>
     <ion-title>Verb Group Menu</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card class="ng-binding list card"  mode="ios">
+    <div class="tabbed text-justify">
+      <br>
+      The following table is a brief summary of the verb groups terminations
+      <br>
+    </div>
+    <div class="grid">
+      <div class="row">
+        <div class="cell cell-1-2"><div class="left-text">1. -<b><span class="verb-stem">V</span>a</b>/-<b><span class="verb-stem">V</span>ä</b></div></div>
+        <div class="cell cell-1-2"><div class="left-text">2. -<b>da</b>/-<b>dä</b></div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-2"><div class="left-text">3. -<b>la</b>/-<b>lä</b>, -<b>na</b>/-<b>nä</b>, -<b>ra</b>/-<b>rä</b> or -<b>sta</b>/-<b>stä</b></div></div>
+        <div class="cell cell-1-2"><div class="left-text">4. -<b><span class="verb-stem">V</span>ta</b>/-<b><span class="verb-stem">V</span>tä</b> (-ita/itä, -eta/etä  ~20%)</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-2"><span class="left-text">5. -<b>ita</b>/-<b>itä</b></span></div>
+        <div class="cell cell-1-2"><span class="left-text">6. -<b>eta</b>/-<b>etä</b></span></div>
+      </div>
 
+    </div>
+    <div class="card-footer">
+      <div class="tmp-ion-footer">
+        Terminations summary
+      </div>
+    </div>
+  </ion-card>
+
+  <br>
+
+  <ion-item *ngFor="let group of group_list" (click)="goTo(group)">
+    <p class="lesson-title"><b>Group {{group}}</b>
+    </p>
+
+  </ion-item>
+  
 </ion-content>

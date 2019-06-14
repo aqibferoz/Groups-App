@@ -4,3 +4,25 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+.icon-inner{
+    display: none !important;
+}
+.s-ion-icon{
+    display: none !important;
+}
+.item-detail-icon .ios .hydrated{
+    display: none !important;
+  }
+  .icon-inner, svg {
+    display: none !important;
+    height: 0% !important;
+    width: 0% !important;    
+}
+
+.item-detail-icon {
+    color: var(--detail-icon-color);
+    font-size: var(--detail-icon-font-size);
+    opacity: var(--detail-icon-opacity);
+    display: none !important;
+}

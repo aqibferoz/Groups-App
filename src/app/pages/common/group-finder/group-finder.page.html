@@ -1,17 +1,26 @@
 
 <ion-header>
   <ion-toolbar color="">
-    <ion-menu-toggle>
-      <ion-button color="clear">
-        <ion-icon style="color: white !important;" slot="start" name="menu"></ion-icon>
-      </ion-button>
-    </ion-menu-toggle>
+      <ion-buttons slot="start">
+          <ion-menu-button mode="ios"></ion-menu-button>
+        </ion-buttons>
     <ion-title>Group Finder</ion-title>
 
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+
+  <ion-grid>
+      <ion-searchbar mode="ios">Verb:</ion-searchbar>
+  </ion-grid>
+
+  
+  <ion-item text-wrap lines="none">
+    <ion-label text-wrap text-left>
+        Enter a finish Verb in its basic form in the above field
+    </ion-label>
+    </ion-item>
 
 
   <!-- <ion-list inset >

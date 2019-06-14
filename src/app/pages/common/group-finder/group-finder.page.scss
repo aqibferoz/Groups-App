@@ -1,7 +1,17 @@
 
 ion-toolbar{
     --background: rgb(56, 126, 245) !important;
-    --height: 10px !important;   
     --color: white !important;
         // --background: var(--ion-toolbar-background,var(--ion-color-step-50,rgb(206, 73, 73)));
+    }
+
+    ion-menu-button{
+        --color: white !important;
+    }
+
+    ion-label{
+        height: 50px !important; 
+        border: 1px solid !important;
+        font-weight: 400 !important;
+        padding: 1px 5px 5px 10px !important;
     }

@@ -65,7 +65,13 @@ const routes: Routes = [
   { path: 'exercises', loadChildren: './pages/common/exercises/exercises.module#ExercisesPageModule' },
   { path: 'conditional', loadChildren: './pages/common/conditional/conditional.module#ConditionalPageModule' },
   { path: 'constgradation', loadChildren: './pages/common/constgradation/constgradation.module#ConstgradationPageModule' },
-  { path: 'tohave', loadChildren: './pages/common/tohave/tohave.module#TohavePageModule' }
+  { path: 'tohave', loadChildren: './pages/common/tohave/tohave.module#TohavePageModule' },
+  { path: 'group1', loadChildren: './pages/verb-group-menu/group1/group1.module#Group1PageModule' },
+  { path: 'group2', loadChildren: './pages/verb-group-menu/group2/group2.module#Group2PageModule' },
+  { path: 'group3', loadChildren: './pages/verb-group-menu/group3/group3.module#Group3PageModule' },
+  { path: 'group4', loadChildren: './pages/verb-group-menu/group4/group4.module#Group4PageModule' },
+  { path: 'group5', loadChildren: './pages/verb-group-menu/group5/group5.module#Group5PageModule' },
+  { path: 'group6', loadChildren: './pages/verb-group-menu/group6/group6.module#Group6PageModule' }
 ];
 
 @NgModule({
