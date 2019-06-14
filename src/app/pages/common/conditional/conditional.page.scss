@@ -8,3 +8,32 @@ ion-toolbar{
     ion-menu-button{
         --color: white !important;
     }
+
+    .item p {
+        color: #000000;
+        font-size: 0.8rem;
+    }
+
+    .tabbed {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 0.9rem;
+        padding: 0 15px 0 25px;
+    }
+
+    .sc-ion-card-ios-h{
+        color: black !important;
+    }
+    .sc-ion-card-ios-h{
+        -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    }
+
+    .btn-style{
+        padding: 5px 5px 5px 5px;
+        border: 1px solid!important;
+        border-color: rgb(10, 168, 231) !important;
+        background: transparent !important;
+        color: rgb(10, 168, 231) !important;
+        border-radius: 5px !important;
+         
+    }
