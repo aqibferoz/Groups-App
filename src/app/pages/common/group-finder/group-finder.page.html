@@ -32,9 +32,9 @@
                 <div class="search-definition-short" > {{ verb.translations}}
                 </div>
               </div>
-              <div item-right class="search-buttons">
+              <div slot="end" class="search-buttons ">
                 <!-- <button ion-button outline >Select</button> -->
-                <button slot="end" ion-button outline class="btn-style" small color="primary">SELECT</button>
+                <button  ion-button outline class="btn-style "  small color="primary">SELECT</button>
               </div>
       </ion-item>
 
@@ -49,7 +49,7 @@
 
 
 
-  <ion-card [hidden]="typing" class="ng-binding list card"  mode="ios" class="text-justify">
+  <ion-card [hidden]="typing" class="ng-binding list card" style="  margin-top: -38px !important;" mode="ios" class="text-justify">
 
     <div [hidden]="display_groupnb<=0" class="tabbed">
       <div [hidden]="!show_trans">
@@ -66,7 +66,7 @@
       <br><span [hidden]="!display_irrexpl"><br>{{display_irrexpl}}</span>
       <span [hidden]="!cg_explanation || display_irrexpl"><br><span [innerHtml]="cg_explanation"></span><br></span>
       <br><span [innerHtml]="display_expl"></span>
-      <br><br><button ion-button [hidden]="display_groupnb===-1" (click)="displayMore()" small outline>Help me to conjugate it</button>
+      <br><br><button ion-button outline class="btn-style " ion-button [hidden]="display_groupnb===-1" (click)="displayMore()" small outline>Help me to conjugate it</button>
 
       <br>
     </div>

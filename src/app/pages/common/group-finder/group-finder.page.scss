@@ -54,5 +54,14 @@ ion-toolbar{
         background: transparent !important;
         color: rgb(10, 168, 231) !important;
         border-radius: 5px !important;
-         
+     
     }
+    .ion-padding-start, [padding-start] {
+        padding-left: unset;
+        -webkit-padding-start: var(--ion-padding, 16px);
+        padding-inline-start: var(--ion-padding, 236px);
+    }
+    .list{
+        margin-top: -38px;
+    }
+     
