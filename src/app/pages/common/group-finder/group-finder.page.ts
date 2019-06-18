@@ -117,9 +117,10 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
    // this.searchControl.valueChanges.distinctUntilChanged().subscribe(search => {
 
   }
-  ionViewDidLoad() {
-
-    this.searchControl.valueChanges.debounceTime(400).subscribe(search => { //debouncetime allow to wait X seconds before to launch searching
+  ionViewDidEnter() {
+    console.log("search");
+    this.searchControl.valueChanges.debounceTime(400).subscribe(search => { 
+      console.log(search);//debouncetime allow to wait X seconds before to launch searching
       this.search = search;
 
         if(this.search != ''){
@@ -170,7 +171,7 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
 
 
   Init(storage) {
-
+console.log(storage)
     storage.get('firstTime').then((first_time) => {
       if(first_time==null)
       // if(first_time!=null)//DEBUG
@@ -198,6 +199,7 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
   }
 
   ProcessClick(verb:any) {
+    console.log(verb)
     this.show_more_less=true;
 
     this.show_trans=false;
@@ -265,6 +267,8 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
 
   ProcessEnter(word,firstwordofthelist) {
     let i;
+    console.log(word);
+    console.log(firstwordofthelist);
     this.show_more_less=true;
     // console.log(firstwordofthelist)
     this.show_trans=false;
@@ -345,7 +349,7 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
 
 
   doneTyping(userInput) {
-
+console.log(userInput);
     let inputToCheck = userInput;
 
     if ( (inputToCheck.length > 1) ){
@@ -413,6 +417,7 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
     });*/
 
     this.current_verb_in_use_display= filtered_words;
+    console.log(this.current_verb_in_use_display);
 
     }
 
