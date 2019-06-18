@@ -40,7 +40,28 @@ ion-toolbar{
     }
     ion-label{
         height: 50px !important; 
-        border: 1px solid !important;
+        // border: 1px solid !important;
         font-weight: 400 !important;
-        padding: 1px 5px 5px 10px !important;
+        // padding: 1px 5px 5px 10px !important;
     }
+    .input-wrapper{
+        margin-bottom: -35px;
+    }
+    .btn-style{
+        padding: 5px 5px 5px 5px;
+        border: 1px solid!important;
+        border-color: rgb(10, 168, 231) !important;
+        background: transparent !important;
+        color: rgb(10, 168, 231) !important;
+        border-radius: 5px !important;
+     
+    }
+    .ion-padding-start, [padding-start] {
+        padding-left: unset;
+        -webkit-padding-start: var(--ion-padding, 16px);
+        padding-inline-start: var(--ion-padding, 236px);
+    }
+    .list{
+        margin-top: -38px;
+    }
+     

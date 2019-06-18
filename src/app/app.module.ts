@@ -14,7 +14,7 @@ import { IonicStorageModule } from "@ionic/storage";
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-
+import {ReactiveFormsModule} from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { GlobalVarsService } from './services/globalVars/global-vars.service';
 import { VerbgroupsService } from './services/libs/verbgroups/verbgroups.service';
@@ -34,7 +34,8 @@ import { CurrentViewServiceService } from './services/currentViewService/current
     IonicModule.forRoot(),
     AppRoutingModule,
     IonicStorageModule.forRoot(),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     StatusBar,
