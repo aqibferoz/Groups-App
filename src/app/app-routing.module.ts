@@ -19,11 +19,11 @@ const routes: Routes = [
 
   { path: 'desc-present', loadChildren: './pages/desc-present/desc-present.module#DescPresentPageModule' },
 
-  { path: 'exconjug', loadChildren: './pages/exconjug/exconjug.module#ExconjugPageModule' },
+  { path: 'exconjug/:id', loadChildren: './pages/exconjug/exconjug.module#ExconjugPageModule' },
 
   { path: 'exercisemenu', loadChildren: './pages/exercisemenu/exercisemenu.module#ExercisemenuPageModule' },
-
-  { path: 'exverbgroup', loadChildren: './pages/exverbgroup/exverbgroup.module#ExverbgroupPageModule' },
+  
+  { path: 'exverbgroup/:id', loadChildren: './pages/exverbgroup/exverbgroup.module#ExverbgroupPageModule' },
 
   { path: 'verb-group-menu', loadChildren: './pages/verb-group-menu/verb-group-menu.module#VerbGroupMenuPageModule' },
 
@@ -62,7 +62,6 @@ const routes: Routes = [
 
   // { path: 'toHave', loadChildren: './pages/common/toHave/toHave.module#toHavePageModule' },
   { path: 'negativeform', loadChildren: './pages/common/negativeform/negativeform.module#NegativeformPageModule' },
-  { path: 'exercises', loadChildren: './pages/common/exercises/exercises.module#ExercisesPageModule' },
   { path: 'conditional', loadChildren: './pages/common/conditional/conditional.module#ConditionalPageModule' },
   { path: 'constgradation', loadChildren: './pages/common/constgradation/constgradation.module#ConstgradationPageModule' },
   { path: 'tohave', loadChildren: './pages/common/tohave/tohave.module#TohavePageModule' },

@@ -11,28 +11,13 @@
 
 <ion-content padding>
 
-  <ion-grid>
-      <ion-searchbar mode="ios">Verb:</ion-searchbar>
-  </ion-grid>
 
-
-  
-  <ion-card class="ng-binding list card"  mode="ios">
-    <br>
-    <div class="tabbed text-justify">
-      Enter a finish Verb in its basic form in the above field
-      <br>
-    </div>
-    <br>
-  </ion-card>
-  
-
-
-  <!-- <ion-list inset >
+  <ion-list inset >
 
     <ion-item>
       <ion-label><b>Verb</b> :</ion-label>
-      <ion-input spellcheck="false" autocomplete="off" placeholder="{{display_placeholder}}" [(ngModel)]="searchValue" [formControl]="searchControl" (keyup.enter)="ProcessEnter(searchValue, current_verb_in_use_display[0], userinput)" (keyup)="onSearchInput(searchValue.length)" class="input-search" #inputfocusinit></ion-input>
+      <ion-input spellcheck="false" autocomplete="off" placeholder="{{display_placeholder}}" [(ngModel)]="searchValue" [formControl]="searchControl" (keyup.enter)="ProcessEnter(searchValue, current_verb_in_use_display[0], userinput)" (keyup)="onSearchInput(searchValue.length)" class="input-search" #ref></ion-input>
+      <!--<ion-input spellcheck="false" autocomplete="off" placeholder="Search" #userinput (keyup)="doneTyping(userinput,$event)"></ion-input>-->
 
     </ion-item>
     <div [hidden]="(!searching) || display_groupnb===0" class="spinner-container">
@@ -92,7 +77,8 @@
     </div>
   </ion-card>
 
-  <img [hidden]="!display_finnco" class="finnco_using_app" src="assets/img/finnco_using_app.png" alt="Finnco"> -->
+  <img [hidden]="!display_finnco" class="finnco_using_app" src="assets/img/finnco_using_app.png" alt="Finnco">
 
 
 </ion-content>
+

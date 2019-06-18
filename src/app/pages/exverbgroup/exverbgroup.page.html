@@ -4,6 +4,29 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-</ion-content>
+<ion-content padding >
+  <ion-grid>
+    <ion-row align-items-start class="div-slide-word" class="div-slide-conjug">
+      <ion-slides (ionSlideDidChange)="randomButton(good_answer)">
+      <ion-slide *ngFor="let verb of display_verb; let i=index" >
+        <h1>{{verb}}</h1>
+        <p class="trad-ex">{{display_trans[i]}}</p>
+      </ion-slide>
+      </ion-slides>
+    </ion-row>
+    <ion-row>
+          <div class="div-slide-title">
+            <p>Select the group number</p>
+          </div>
+      <ion-row class="div-slide-answer">
+        <ion-col col-4 *ngFor="let number of number_buttons" >
+          <div>
+              <button ion-button class="ex-buttons"  [class.true]="test_answer[number]==1" [class.false]="test_answer[number]==2"(click)="goToSlide(display_number_button[number],number)">{{display_number_button[number]}}</button>
+          </div>
+        </ion-col>
+  
+      </ion-row>
+  
+    </ion-row>
+  </ion-grid>
+  </ion-content>

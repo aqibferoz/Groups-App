@@ -5,5 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalVarsService {
 
-  constructor() { }
+  user_actions_counter: number;
+
+  constructor() {
+    this.user_actions_counter=0;
+  }
+
+  setUACounter(value) {
+    this.user_actions_counter = value;
+  }
+
+  getUACounter() {
+    return this.user_actions_counter;
+  }
 }

@@ -4,7 +4,18 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CurrentViewServiceService {
-  currentPageTitle: any;
+  
+  public lastsearchverb :string;
+  public currentPageTitle: string;
+   //public currentheader: boolean;
+   //public currentnumberlessons: number;
+   //public currentlevellessons: number;
+   constructor(){
 
-  constructor() { }
+       this.currentPageTitle="Group Finder";
+       this.lastsearchverb="";
+       //this.currentnumberlessons=0;
+       //this.currentheader=false;
+
+}
 }

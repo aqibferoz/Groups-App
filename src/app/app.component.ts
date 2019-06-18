@@ -2,19 +2,19 @@ import { Component, ViewChild } from '@angular/core';
 
 import { Platform, NavController, MenuController} from '@ionic/angular';
 
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+// import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+// import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { GroupFinderPage } from './pages/common/group-finder/group-finder.page';
-import { CurrentViewServiceService } from './services/currentViewService/current-view-service.service';
-import { GroupFinderPageModule } from './pages/common/group-finder/group-finder.module';
-import { VerbGroupMenuPageModule } from './pages/verb-group-menu/verb-group-menu.module';
-import { DescExceptionsPresentPageModule } from './pages/desc-present/desc-exceptions-present/desc-exceptions-present.module';
-import { DescTohavePresentPageModule } from './pages/desc-present/desc-tohave-present/desc-tohave-present.module';
-import { DescNegativePresentPageModule } from './pages/desc-present/desc-negative-present/desc-negative-present.module';
-import { DescConsVowPageModule } from './pages/common/desc-cons-vow/desc-cons-vow.module';
-import { ExercisemenuPageModule } from './pages/exercisemenu/exercisemenu.module';
-import { DescConditionalPresentPageModule } from './pages/desc-present/desc-conditional-present/desc-conditional-present.module';
-import { AboutPageModule } from './pages/common/about/about.module';
+// import { CurrentViewServiceService } from './services/currentViewService/current-view-service.service';
+// import { GroupFinderPageModule } from './pages/common/group-finder/group-finder.module';
+// import { VerbGroupMenuPageModule } from './pages/verb-group-menu/verb-group-menu.module';
+// import { DescExceptionsPresentPageModule } from './pages/desc-present/desc-exceptions-present/desc-exceptions-present.module';
+// import { DescTohavePresentPageModule } from './pages/desc-present/desc-tohave-present/desc-tohave-present.module';
+// import { DescNegativePresentPageModule } from './pages/desc-present/desc-negative-present/desc-negative-present.module';
+// import { DescConsVowPageModule } from './pages/common/desc-cons-vow/desc-cons-vow.module';
+// import { ExercisemenuPageModule } from './pages/exercisemenu/exercisemenu.module';
+// import { DescConditionalPresentPageModule } from './pages/desc-present/desc-conditional-present/desc-conditional-present.module';
+// import { AboutPageModule } from './pages/common/about/about.module';
 
 @Component({
   selector: 'app-root',
@@ -55,7 +55,7 @@ export class AppComponent {
     } ,
     {
       title: 'Exercises',
-      url: '/exercises',
+      url: '/exercisemenu',
       icon: 'book'
     } ,
     {

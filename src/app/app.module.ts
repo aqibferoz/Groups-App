@@ -9,6 +9,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { IonSlides } from '@ionic/angular';
 import { DatePipe } from "@angular/common";
+import { IonicStorageModule } from "@ionic/storage";
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +33,7 @@ import { CurrentViewServiceService } from './services/currentViewService/current
     HttpModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    IonicStorageModule.forRoot(),
     FormsModule
   ],
   providers: [

@@ -1,9 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>exercisemenu</ion-title>
+      <ion-buttons slot="start">
+          <ion-menu-button mode="ios"></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Exercises Menu</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+  <ion-item >
+    <h1> Verb Groups (new exercises)</h1>
 
+</ion-item>
+<ion-item *ngFor="let lesson of lesson_list; let i=index" (click)="goTo(1,lesson,i)">
+    <p class="lesson-title"><b>Exercise {{lesson}}</b>
+      
+        <span class="level-ex item-end ion-text-end"> medium </span>
+    </p>
+
+</ion-item>
+<ion-item >
+    <h1> Conjugation (new exercises)</h1>
+
+</ion-item>
+<ion-item *ngFor="let lesson of lesson_conjug_list; let i=index" (click)="goTo(2,lesson,i)">
+    <p class="lesson-title"><b>Exercise {{lesson}}</b>
+        <span class="level-ex"> medium </span>
+    </p>
+</ion-item>
 </ion-content>
