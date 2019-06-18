@@ -12,12 +12,11 @@
 <ion-content padding>
 
 
-  <ion-list inset >
+  <!-- <ion-list inset >
 
     <ion-item>
       <ion-label><b>Verb</b> :</ion-label>
       <ion-input spellcheck="false" autocomplete="off" placeholder="{{display_placeholder}}" [(ngModel)]="searchValue" [formControl]="searchControl" (keyup.enter)="ProcessEnter(searchValue, current_verb_in_use_display[0], userinput)" (keyup)="onSearchInput(searchValue.length)" class="input-search" #ref></ion-input>
-      <!--<ion-input spellcheck="false" autocomplete="off" placeholder="Search" #userinput (keyup)="doneTyping(userinput,$event)"></ion-input>-->
 
     </ion-item>
     <div [hidden]="(!searching) || display_groupnb===0" class="spinner-container">
@@ -78,7 +77,7 @@
   </ion-card>
 
   <img [hidden]="!display_finnco" class="finnco_using_app" src="assets/img/finnco_using_app.png" alt="Finnco">
-
+ -->
 
 </ion-content>
 

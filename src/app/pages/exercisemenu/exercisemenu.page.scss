@@ -37,3 +37,9 @@ ion-toolbar{
         border-radius: 5px !important;
          
     }
+
+    .ion-padding-start, [padding-start] {
+        padding-left: unset;
+        -webkit-padding-start: var(--ion-padding, 16px);
+        padding-inline-start: var(--ion-padding, 236px);
+    }

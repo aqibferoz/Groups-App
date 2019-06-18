@@ -142,7 +142,7 @@ export class ExverbgroupPage implements OnInit {
     if(this.testAnswer(number, id_test_number)) { // test if it's a good answer
 
       if(this.testEnd()){ // test if user is in the end of exercise
-        // this.showAlert();
+        this.showAlert();
       //  this.navCtrl.push(GroupFinder);
       }
       else {
@@ -261,12 +261,12 @@ export class ExverbgroupPage implements OnInit {
 }
 
 
-  // showAlert() {
-  //   let alert = this.alertCtrl.create({
-  //     title: 'Well done!',
-  //     subTitle: 'You successfully completed this exercise.',
-  //     buttons: ['Great!']
-  //   });
-  //   alert.present();
-  // }
+  async showAlert() {
+    const alert = await this.alertCtrl.create({
+      message : 'You successfully completed this exercise.',
+      header: 'Well done!',
+      buttons: ['Great!']
+    });
+    await alert.present();
+  }
 }

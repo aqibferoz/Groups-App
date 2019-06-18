@@ -1,9 +1,50 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>exconjug</ion-title>
+      <ion-buttons slot="start">
+          <ion-back-button mode="ios"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Ex. Conjugation {{lesson_number+1}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding >
+  <ion-buttons>
+          <button [disabled]="!display_help_button" (click)="help()" class="btn-style" ion-button outline>HELP</button>
 
+  </ion-buttons>
+  <ion-grid>
+
+      <ion-row align-items-start class="div-slide-conjug">
+        
+          <ion-slides (ionSlideDidChange)="prepareSlide(good_answer);">
+              <ion-slide *ngFor="let verb of list_verb_half;">
+                <ion-grid>
+                  <ion-row class="ion-justify-content-center">
+                  <h1>{{display_pers}} {{verb}}</h1>
+                </ion-row>
+                <ion-row class="ion-justify-content-center">
+                  <p>({{list_verb_full[count_number]}})</p></ion-row>
+                  <ion-row class="ion-justify-content-center">
+                  <p>Missing letters : {{count_missing_letter}}</p>
+                </ion-row>
+                </ion-grid>
+              </ion-slide>
+          </ion-slides>
+
+      </ion-row>
+      <ion-row>
+          <div class="div-slide-title">
+              <p>Select the right letter</p>
+          </div>
+          <ion-row class="div-slide-answer">
+              <ion-col col-4 *ngFor="let number of number_buttons" >
+                  <div>
+                      <button ion-button class="ex-buttons"  [class.true]="test_answer[number]==1" [class.false]="test_answer[number]==2"(click)="goToSlide(display_letter_button[number],number)">{{display_letter_button[number]}}</button>
+                  </div>
+              </ion-col>
+
+          </ion-row>
+
+      </ion-row>
+  </ion-grid>
 </ion-content>
