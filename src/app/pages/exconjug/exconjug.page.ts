@@ -3,7 +3,7 @@ import {Component, ViewChild} from '@angular/core';
 import {Http} from "@angular/http";
 import 'rxjs/add/operator/map';
 
-import { IonSlides, AlertController } from '@ionic/angular';
+import { IonSlides, AlertController, NavController } from '@ionic/angular';
 import { CurrentViewServiceService } from 'src/app/services/currentViewService/current-view-service.service';
 import { ConjugationService } from 'src/app/services/libs/conjugation/conjugation.service';
 import { VerbgroupsService } from 'src/app/services/libs/verbgroups/verbgroups.service';
@@ -46,7 +46,7 @@ export class ExconjugPage implements OnInit {
   display_help_button:boolean=true;
   display_pers:string;
 
-  constructor(private router: Router,private route:ActivatedRoute, private http: Http, public  currentView: CurrentViewServiceService,
+  constructor(private navCtrl: NavController, private router: Router,private route:ActivatedRoute, private http: Http, public  currentView: CurrentViewServiceService,
               public alertCtrl: AlertController,public conjug:ConjugationService ,public verbGroup:VerbgroupsService) {
       this.lesson_number=this.route.snapshot.params['id'];
       this.list_verb_full=[];
@@ -445,7 +445,9 @@ export class ExconjugPage implements OnInit {
       });
       await alert.present();
   }
-
+  pop(){
+    this.navCtrl.back();
+  }
 
 
 }

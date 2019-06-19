@@ -5,7 +5,7 @@ import {Http} from "@angular/http";
 import 'rxjs/add/operator/map';
 // import {VerbGroups} from "../../providers/libs/verbgroups";
 // import {CurrentViewService} from "../../providers/currentViewService";
-import { IonSlides, AlertController } from '@ionic/angular';
+import { IonSlides, AlertController, NavController } from '@ionic/angular';
 import { Router, ActivatedRoute } from '@angular/router';
 import { VerbgroupsService } from 'src/app/services/libs/verbgroups/verbgroups.service';
 import { CurrentViewServiceService } from 'src/app/services/currentViewService/current-view-service.service';
@@ -33,7 +33,7 @@ export class ExverbgroupPage implements OnInit {
   lesson_number:number;
   test_answer:Array<number>;
 
-  constructor(private router: Router,private route:ActivatedRoute, private http: Http, private verbGroup: VerbgroupsService,public  currentView: CurrentViewServiceService,
+  constructor(private navCtrl:NavController, private router: Router,private route:ActivatedRoute, private http: Http, private verbGroup: VerbgroupsService,public  currentView: CurrentViewServiceService,
               public alertCtrl: AlertController) {
 
   this.display_verb=[];
@@ -268,5 +268,8 @@ export class ExverbgroupPage implements OnInit {
       buttons: ['Great!']
     });
     await alert.present();
+  }
+  pop(){
+    this.navCtrl.back();
   }
 }

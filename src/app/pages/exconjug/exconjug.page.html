@@ -1,15 +1,15 @@
 <ion-header>
   <ion-toolbar>
       <ion-buttons slot="start">
-          <ion-back-button mode="ios"></ion-back-button>
+          <ion-back-button (click)="pop()" mode="ios"></ion-back-button>
         </ion-buttons>
     <ion-title>Ex. Conjugation {{lesson_number+1}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding >
-  <ion-buttons>
-          <button [disabled]="!display_help_button" (click)="help()" class="btn-style" ion-button outline>HELP</button>
+  <ion-buttons class="ion-padding-start">
+          <button [disabled]="!display_help_button" (click)="help()" class="btn-style fill" ion-button outline>HELP</button>
 
   </ion-buttons>
   <ion-grid>

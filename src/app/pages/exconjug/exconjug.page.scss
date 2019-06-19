@@ -66,13 +66,100 @@ ion-toolbar{
     font-size: 18px;
     background-color: transparent;
     border: 1px solid;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
 }
-    // .ion-padding-start, [padding-start] {
-    //     padding-left: unset;
-    //     -webkit-padding-start: var(--ion-padding, 16px);
-    //     padding-inline-start: var(--ion-padding, 90px);
-    // }
+    .ion-padding-start, [padding-start] {
+        padding-left: unset;
+        -webkit-padding-start: var(--ion-padding, 16px);
+        padding-inline-start: var(--ion-padding, 270px);
+    }
+    .button-outline-ios {
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #387ef5;
+        color: #387ef5;
+        background-color: transparent;
+    }
+    .button-ios {
+        border-radius: 4px;
+        height: 2.8em;
+        font-size: 1.6rem;
+        color: #fff;
+        background-color: #387ef5;
+        margin: 0.4rem 0.2rem;
+        padding: 0 1em;
+    }
+    .button {
+        text-align: center;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+        text-overflow: ellipsis;
+        text-transform: none;
+        white-space: nowrap;
+        cursor: pointer;
+        vertical-align: top;
+        vertical-align: -webkit-baseline-middle;
+        -webkit-transition: background-color, opacity 100ms linear;
+        transition: background-color, opacity 100ms linear;
+        -webkit-font-kerning: none;
+        font-kerning: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        contain: content;
+    }
+    ion-buttons button, ion-buttons a, ion-buttons input, ion-buttons textarea, ion-buttons div {
+        pointer-events: auto;
+    }
+    button {
+        border: 0;
+        font-family: inherit;
+        font-style: inherit;
+        font-variant: inherit;
+        line-height: 1;
+        text-transform: none;
+        cursor: pointer;
+        -webkit-appearance: button;
+    }
+    a[disabled], button[disabled], [ion-button][disabled] {
+        cursor: default;
+        opacity: .4;
+        pointer-events: none;
+    }
+    a[disabled], button[disabled], html input[disabled] {
+        cursor: default;
+    }
+
+    
+    ion-back-button{
+        --color: white !important;
+    }
+    // .fill:active {
+        
+    //     background: blue;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     top: 100%;
+    //     z-index: -1;
+    //     -webkit-transition: top 0.09s ease-in;
+    //   }
+      button:active {
+        border-style: inset;
+        background: blue !important;
+        -webkit-transition: top 0.09s ease-in !important;
+    }
+    button {
+        padding: 1px 6px;
+    }
+  
     // .ion-padding-start1, [padding-start] {
     //     padding-left: unset;
     //     -webkit-padding-start: var(--ion-padding, 16px);
