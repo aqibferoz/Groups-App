@@ -7,15 +7,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-item >
-    <h1> Verb Groups (new exercises)</h1>
+    <h1>Verb Groups (new exercises)</h1>
 
 </ion-item>
 <ion-item *ngFor="let lesson of lesson_list; let i=index" (click)="goTo(1,lesson,i)">
     <p class="lesson-title"><b>Exercise {{lesson}}</b>
       
-        <span class="level-ex item-end ion-text-end"> medium </span>
+        <span class="level-ex ion-padding-start"> medium </span>
     </p>
 
 </ion-item>
@@ -25,7 +25,7 @@
 </ion-item>
 <ion-item *ngFor="let lesson of lesson_conjug_list; let i=index" (click)="goTo(2,lesson,i)">
     <p class="lesson-title"><b>Exercise {{lesson}}</b>
-        <span class="level-ex"> medium </span>
+        <span class="level-ex ion-padding-start"> medium </span>
     </p>
 </ion-item>
 </ion-content>
