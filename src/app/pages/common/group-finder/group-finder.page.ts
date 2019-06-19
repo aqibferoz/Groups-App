@@ -24,6 +24,7 @@ import { IonInput, ModalController, MenuController } from '@ionic/angular';
 import { VerbgroupsService } from 'src/app/services/libs/verbgroups/verbgroups.service';
 import { CurrentViewServiceService } from 'src/app/services/currentViewService/current-view-service.service';
 import { from } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-group-finder',
@@ -71,7 +72,7 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
   constructor(private modalController : ModalController,
               private http: Http,
               private verbGroup: VerbgroupsService,
-       
+       private router:Router,
               public menuCtrl: MenuController,
               private storage: Storage,
               public currentView: CurrentViewServiceService
@@ -440,25 +441,32 @@ console.log(userInput);
     let pageToNav = null;
 
     if(this.attr === "ir_pr") {
+    this.router.navigate(['/desc-exceptions-present']);
       // pageToNav = DescExceptionsPresent;
     }else{
       switch(this.display_groupnb) {
         case 1:
+            this.router.navigate(['/desc-vb-group1-present']);
           // pageToNav = DescVbGr1Present;
           break;
         case 2:
+            this.router.navigate(['/desc-vb-group2-present']);
           // pageToNav = DescVbGr2Present;
           break;
         case 3:
+            this.router.navigate(['/desc-vb-group3-present']);
           // pageToNav = DescVbGr3Present;
           break;
         case 4:
+            this.router.navigate(['/desc-vb-group4-present']);
           // pageToNav = DescVbGr4Present;
           break;
         case 5:
+            this.router.navigate(['/desc-vb-group5-present']);
           // pageToNav = DescVbGr5Present;
           break;
         default:
+            this.router.navigate(['/desc-vb-group6-present']);
           // pageToNav = DescVbGr6Present;
       }
 
