@@ -69,3 +69,21 @@ ion-toolbar{
         background: blue !important;
         -webkit-transition: top 0.09s ease-in !important;
     }
+
+//     .list-ios.list-inset {
+//     margin-left: 16px;
+//     margin-right: 16px;
+//     margin-top: 16px;
+//     margin-bottom: 0px !important;
+//     border-radius: 4px;
+// }
+
+.search-item {
+    padding: 10px 0 10px;
+     border-bottom: 1px #dedede !important; 
+}
+.list-ios.list-inset {
+    --border-width: 0 0 1px 0;
+    --inner-border-width: 0;
+    margin-bottom: 20px;
+}

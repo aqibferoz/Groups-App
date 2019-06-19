@@ -446,27 +446,27 @@ console.log(userInput);
     }else{
       switch(this.display_groupnb) {
         case 1:
-            this.router.navigate(['/desc-vb-group1-present']);
+            this.router.navigate(['/group1']);
           // pageToNav = DescVbGr1Present;
           break;
         case 2:
-            this.router.navigate(['/desc-vb-group2-present']);
+            this.router.navigate(['/group2']);
           // pageToNav = DescVbGr2Present;
           break;
         case 3:
-            this.router.navigate(['/desc-vb-group3-present']);
+            this.router.navigate(['/group2']);
           // pageToNav = DescVbGr3Present;
           break;
         case 4:
-            this.router.navigate(['/desc-vb-group4-present']);
+            this.router.navigate(['/group4']);
           // pageToNav = DescVbGr4Present;
           break;
         case 5:
-            this.router.navigate(['/desc-vb-group5-present']);
+            this.router.navigate(['/group5']);
           // pageToNav = DescVbGr5Present;
           break;
         default:
-            this.router.navigate(['/desc-vb-group6-present']);
+            this.router.navigate(['/group6']);
           // pageToNav = DescVbGr6Present;
       }
 
