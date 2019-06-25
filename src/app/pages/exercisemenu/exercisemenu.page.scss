@@ -20,7 +20,10 @@ ion-toolbar{
         font-size: 0.9rem;
         padding: 0 15px 0 25px;
     }
-
+    h1 {
+        margin-top: 20px;
+        font-size: 25px !important;
+    }
     .sc-ion-card-ios-h{
         color: black !important;
     }
@@ -40,6 +43,6 @@ ion-toolbar{
 
     .ion-padding-start, [padding-start] {
         padding-left: unset;
-        -webkit-padding-start: var(--ion-padding, 16px);
-        padding-inline-start: var(--ion-padding, 236px);
+        -webkit-padding-start: var(--ion-padding, 20px);
+        padding-inline-start: var(--ion-padding, 226px);
     }

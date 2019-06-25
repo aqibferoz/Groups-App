@@ -15,7 +15,7 @@
 <ion-item *ngFor="let lesson of lesson_list; let i=index" (click)="goTo(1,lesson,i)">
     <p class="lesson-title"><b>Exercise {{lesson}}</b>
       
-        <span class="level-ex ion-padding-start"> medium </span>
+        <span slot = "end" class="level-ex ion-padding-start"> medium </span>
     </p>
 
 </ion-item>
@@ -25,7 +25,7 @@
 </ion-item>
 <ion-item *ngFor="let lesson of lesson_conjug_list; let i=index" (click)="goTo(2,lesson,i)">
     <p class="lesson-title"><b>Exercise {{lesson}}</b>
-        <span class="level-ex ion-padding-start"> medium </span>
+        <span slot = "end" class="level-ex ion-padding-start"> medium </span>
     </p>
 </ion-item>
 </ion-content>

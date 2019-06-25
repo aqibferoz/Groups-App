@@ -55,9 +55,10 @@ console.log(data);
 
 
   goTo(component: number,number : number, level : number) { //go to Exverbgroup with number of the choosen lesson
+    console.log(number)
     switch (component) { //display easy, medium or hard according to level of lesson
       case  1:
-      let a=number-1
+      let a=number
         this.router.navigate(
           ['exverbgroup/'+a]);
         this.page_title='Exverbgroup' +(number);

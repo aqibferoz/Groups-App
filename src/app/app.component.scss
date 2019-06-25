@@ -13,11 +13,21 @@
 .item-detail-icon .ios .hydrated{
     display: none !important;
   }
-  .icon-inner, svg {
-    display: none !important;
-    height: 0% !important;
-    width: 0% !important;    
-}
+//   .icon-inner, svg {
+//     display: none !important;
+//     height: 0% !important;
+//     width: 0% !important;    
+// }
 .md .title-md .hydrated{
     height: 58px !important;
   }
+  .icon-inner, svg {
+    display: initial !important;
+    height: 50% !important;
+    width: 50% !important;
+}
+.s-ion-icon{
+    display: initial !important;
+    height: 50% !important;
+    width: 50% !important;
+}

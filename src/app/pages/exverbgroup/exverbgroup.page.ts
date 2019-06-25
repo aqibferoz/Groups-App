@@ -139,6 +139,7 @@ export class ExverbgroupPage implements OnInit {
   }
 
   async goToSlide(number :number, id_test_number:number) {// go to next slide
+    console.log(number, this.number_buttons)
     if(this.testAnswer(number, id_test_number)) { // test if it's a good answer
 
       if(this.testEnd()){ // test if user is in the end of exercise

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-group4',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Group4Page implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  displayMore(){
+    this.router.navigate(['constgradation'])
+  }
 }

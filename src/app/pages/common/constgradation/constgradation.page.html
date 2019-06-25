@@ -8,36 +8,202 @@
 </ion-header>
 
 <ion-content>
-    <ion-card class="ng-binding list card"  mode="ios">
-        <br>
-        <div class="tabbed text-justify">
-          The following table is a brief summary of the verb groups terminations
-          <br>
-        </div>
-        <br>
-      </ion-card>
-    
-      <ion-card class="ng-binding list card"  mode="ios">
-    
-        <div class="grid">
-          <div class="row">
-            <div class="cell cell-1-2"><div class="left-text">1. -<b><span class="verb-stem">V</span>a</b>/-<b><span class="verb-stem">V</span>ä</b></div></div>
-            <div class="cell cell-1-2"><div class="left-text">2. -<b>da</b>/-<b>dä</b></div></div>
-          </div>
-          <div class="row">
-            <div class="cell cell-1-2"><div class="left-text">3. -<b>la</b>/-<b>lä</b>, -<b>na</b>/-<b>nä</b>, -<b>ra</b>/-<b>rä</b> or -<b>sta</b>/-<b>stä</b></div></div>
-            <div class="cell cell-1-2"><div class="left-text">4. -<b><span class="verb-stem">V</span>ta</b>/-<b><span class="verb-stem">V</span>tä</b> (-ita/itä, -eta/etä  ~20%)</div></div>
-          </div>
-          <div class="row">
-            <div class="cell cell-1-2"><span class="left-text">5. -<b>ita</b>/-<b>itä</b></span></div>
-            <div class="cell cell-1-2"><span class="left-text">6. -<b>eta</b>/-<b>etä</b></span></div>
-          </div>
-    
-        </div>
-        <div class="card-footer">
-          <div class="tmp-ion-footer">
-            Terminations summary
-          </div>
-        </div>
-      </ion-card>
+  <ion-card class="ng-binding list card" mode="ios">
+    <br>
+    <div class="tabbed text-justify">
+      In Finnish, the vowel are distinguished into 3 types :
+      <br> - <b><span class="basic-underlined">Back vowels</span> : &emsp;&emsp;A, O, U</b>
+      <br> - <b><span class="basic-underlined">Neutral vowels</span> : &emsp;E, I</b>
+      <br> - <b><span class="basic-underlined">Front vowels</span> :&emsp;&emsp; Ä, Ö, Y</b>
+      <br>
+      <br> A verb, and more generally a word, (unless it is a compound word) can be only be composed according to the following rules :
+
+      <br> - <b class="basic-underlined">Back vowel</b> words can only be composed of <b class="basic-underlined">back and neutral vowels</b>, e.g. he haluavat (could not be haluavät)
+      <br> - <b class="basic-underlined">Front vowel</b> words can only be composed of <b class="basic-underlined">front and neutral vowels</b>, e.g. he häiritsevät (could not be häiritsevat)
+      <br> - <b class="basic-underlined">Otherwise</b> if the word is only <b class="basic-underlined">composed of neutral vowel</b>, it will be <b class="basic-underlined">assigned with front vowels</b>, e.g. he sihisevät
+
+      <br>
+      <br> Another rule to consider when conjugating is that <span class="verb-termination">there can't be more than 2 of the same vowel in a row</span>.
+      <br> <span class="basic-underlined"></span>Ex.: <span class="verb-stem">her</span><span class="underlined"><span class="verb-stem">ä</span><b class="underlined">t</b><span class="verb-stem">ä</span></span> (vt 4, to wake up) -> Hän <span class="verb-stem">herää</span><span class="verb-termination">ä</span> is not possible so it will be hän <span class="verb-stem">herää</span>.
+
+      <br>
+    </div>
+
+    <div class="card-footer">
+      <div class="tmp-ion-footer">
+        Vowel harmony in verbs
+      </div>
+    </div>
+  </ion-card>
+
+  <ion-card class="ng-binding list card"  mode="ios">
+    <br>
+    <div class="tabbed text-justify">
+      There are only a few irregular verb in Finnish however when you <b>conjugate</b> verbs, many of them are affected by the so-called "<b>consonant gradation</b>" in some forms.
+      The change between weak and strong grade occurs <b class="basic-underlined"> in between the 2nd and 3rd syllable from the end of the verb</b>. <b>The strong grade becomes weak in</b>
+      <span class="verb-stem">indicative present and imperfect</span> in <span class="verb-termination"> <span class="basic-underlined">all the persons except</span> the 3rd persons (sg. & pl.) in case A</span> and in <span class="verb-termination"><b class="basic-underlined">all the persons</b> in case B</span>.
+      In the <span class="verb-termination">case B</span>, the weak grade becomes strong but the consonant gradation is <b>not systematic</b>. For example, tallata conjugates tallaan, tallaat, etc... .
+      <br>The following table summarizes where these changes occur :
+      <br>
+      <br>
+      <br>
+    </div>
+
+
+    <div class="grid">
+      <div class="row">
+        <div class="cell cell-1-2 "><div class="centered-text"><span class="bold-italic"><span class="verb-stem basic-underlined">A - Verbityyppi 1</span></span></div></div>
+        <div class="cell cell-1-2"><div class="centered-text"><span class="bold-italic"><span class="verb-stem basic-underlined">B - Verbityyppi 3 (ending in -lla/-llä), 4 and 6</span></span></div></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="bold-italic">strong</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="bold-italic">weak</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="bold-italic">example</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="bold-italic">weak</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="bold-italic">strong</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="bold-italic">example</span></div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">kk</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">k</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">roikkua</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">k</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">kk</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">hakata</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">pp</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">p</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">loppua</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">p</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">pp</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">lapata</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">tt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">t</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">juottaa</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">t</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">tt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">ajatella</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">k</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">Ø</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">hakea</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">Ø</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">k</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">maata</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">p</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">v</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">leipoa</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">v</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">p</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">huveta</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">t</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">d</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">sataa</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">d</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">t</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">suudella</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">nk</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">ng</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">tunkea</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">ng</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">nk</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">langeta</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">mp</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">mm</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">kömpiä</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">mm</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">mp</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">kammata</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">lt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">ll</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">puoltaa</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">ll</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">lt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">kullata</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">nt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">nn</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">antaa</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">nn</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">nt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">kannella</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">rt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">rr</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">pakertaa</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">rr</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">rt</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">verrata</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">lke</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">lje</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">kulkea</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">lje</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">lke</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">valjeta</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">lki</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">lji</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">hylkiä</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">lji</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">lki</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"> - </div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">rke</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">rje</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">särkeä</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">rje</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">rke</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">tarjeta</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">hke</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">hje</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"> - </div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">hje</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">hke</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">puhjeta</div></div>
+      </div>
+      <div class="row">
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem">uku</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination">u'u</span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text">liukua</div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-stem"> - </span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"><span class="verb-termination"> - </span></div></div>
+        <div class="cell cell-1-6 "><div class="centered-text"> - </div></div>
+      </div>
+
+      <br>
+      <div class="tabbed text-justify">
+        <b>/!\ Huom!</b> Consonant gradation does not happen for the following : <b>sk</b>, <b>st</b>, <b>tk</b>, <b>hk</b>, <b>ks</b>, <b>ts</b> and <b>sp</b> (<span class="basic-underlined">ex</span>: kirskua, karaistua, jatkaa, huhkia, kammoksua, kaitsea)
+      </div>
+    </div>
+    <br>
+    <div class="card-footer">
+      <div class="tmp-ion-footer">
+        Consonant gradation in verbs
+      </div>
+    </div>
+  </ion-card>
+
 </ion-content>
