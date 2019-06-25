@@ -32,10 +32,14 @@
 
   .itabbed{
       padding-left: 10px !important;
-      font-size: 1.0em !important;
+      font-size: 0.9em !important;
   }
   .icon-inner, svg {
     display: initial !important;
-    height: 50% !important;
-    width: 50% !important;
+    height: 80% !important;
+    width: 80% !important;
+}
+.icon-size{
+    height: 20px !important;
+    width: 20px !important;
 }

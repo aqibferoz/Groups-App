@@ -44,5 +44,5 @@ ion-toolbar{
     .ion-padding-start, [padding-start] {
         padding-left: unset;
         -webkit-padding-start: var(--ion-padding, 20px);
-        padding-inline-start: var(--ion-padding, 226px);
+        padding-inline-start: var(--ion-padding, 226px) !important;
     }
