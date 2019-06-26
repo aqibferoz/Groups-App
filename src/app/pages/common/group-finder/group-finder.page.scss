@@ -4,6 +4,10 @@ ion-toolbar{
     --background: rgb(56, 126, 245) !important;
     --color: white !important;
         // --background: var(--ion-toolbar-background,var(--ion-color-step-50,rgb(206, 73, 73)));
+        
+    }
+    .toolbar-title{
+        font-weight: 600 !important;
     }
 
     ion-menu-button{
@@ -86,4 +90,11 @@ ion-toolbar{
     --border-width: 0 0 1px 0;
     --inner-border-width: 0;
     margin-bottom: 20px;
+}
+.item-input.sc-ion-label-md-h, .item-input .sc-ion-label-md-h {
+    -ms-flex: initial;
+    flex: initial;
+    max-width: 200px;
+    pointer-events: none;
+    color: #808080a6 !important;
 }

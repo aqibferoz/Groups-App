@@ -5,14 +5,14 @@
         <ion-toolbar>
             <!-- <link rel="icon" type="image/png" href="../assets/icon/favicon.png" /> -->
 
-          <ion-title style="background-color:rgb(56, 126, 245) !important; color: white !important; height: 58px !important; padding-bottom: 12px !important;"><img class="finnco_img_ico" src="assets/img/finnco.png" alt="Finnco">FINNCO HELP ME!</ion-title>
+          <ion-title style="background-color:rgb(56, 126, 245) !important; color: white !important; height: 58px !important; padding-bottom: 10px !important;"><img class="finnco_img_ico" src="assets/img/finnco.png" alt="Finnco"><b>FINNCO HELP ME!</b></ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" class="icon-size" [name]="p.icon"></ion-icon>
+              <ion-icon slot="start" class="icon-size" [name]="p.icon"  style="margin-right: -1px !important; padding: 0 6px 0 0 !important; color: black !important;"></ion-icon>
               <ion-label>
                 {{p.title}}
               </ion-label>
