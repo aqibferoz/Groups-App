@@ -32,8 +32,6 @@ const routes: Routes = [
   { path: 'desc-cons-vow', loadChildren: './pages/common/desc-cons-vow/desc-cons-vow.module#DescConsVowPageModule' },
 
   { path: 'desc-groups-sum', loadChildren: './pages/common/desc-groups-sum/desc-groups-sum.module#DescGroupsSumPageModule' },
-
-  { path: 'get-started-modal', loadChildren: './pages/common/get-started-modal/get-started-modal.module#GetStartedModalPageModule' },
   
   { path: 'group-finder',
    loadChildren: './pages/common/group-finder/group-finder.module#GroupFinderPageModule' },
@@ -70,7 +68,8 @@ const routes: Routes = [
   { path: 'group3', loadChildren: './pages/verb-group-menu/group3/group3.module#Group3PageModule' },
   { path: 'group4', loadChildren: './pages/verb-group-menu/group4/group4.module#Group4PageModule' },
   { path: 'group5', loadChildren: './pages/verb-group-menu/group5/group5.module#Group5PageModule' },
-  { path: 'group6', loadChildren: './pages/verb-group-menu/group6/group6.module#Group6PageModule' }
+  { path: 'group6', loadChildren: './pages/verb-group-menu/group6/group6.module#Group6PageModule' },
+  { path: 'get-started-modal', loadChildren: './pages/common/group-finder/get-started-modal/get-started-modal.module#GetStartedModalPageModule' }
 ];
 
 @NgModule({

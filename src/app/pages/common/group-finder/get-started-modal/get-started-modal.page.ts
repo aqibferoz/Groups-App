@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController, ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-get-started-modal',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetStartedModalPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController, private modal: ModalController) { }
 
   ngOnInit() {
   }
-
+  close() {
+    this.modal.dismiss();
+  }
 }

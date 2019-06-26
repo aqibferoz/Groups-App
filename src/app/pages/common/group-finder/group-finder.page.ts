@@ -25,6 +25,8 @@ import { VerbgroupsService } from 'src/app/services/libs/verbgroups/verbgroups.s
 import { CurrentViewServiceService } from 'src/app/services/currentViewService/current-view-service.service';
 import { from } from 'rxjs';
 import { Router } from '@angular/router';
+import { GetStartedModalPage } from '../../common/group-finder/get-started-modal/get-started-modal.page';
+import { GetStartedModalPageModule } from '../get-started-modal/get-started-modal.module';
 
 @Component({
   selector: 'app-group-finder',
@@ -173,12 +175,14 @@ export class GroupFinderPage implements OnInit, AfterContentInit  {
 
   Init(storage) {
 console.log(storage)
-    storage.get('firstTime').then((first_time) => {
-      if(first_time==null)
+    storage.get('firstTime').then(async (first_time) => {
+      if(first_time!=null)
       // if(first_time!=null)//DEBUG
-      {
-        // let modal = this.modalController.create(GetStartedModal);
-        // modal.present();
+      {console.log("hello")
+        // let modal = await this.modalController.create(GetStartedModalPage);
+        let modal = await this.modalController.create( {component: GetStartedModalPage});
+        console.log("hello1")
+         modal.present();
         storage.set('firstTime', JSON.stringify(new Date().getTime()));
         this.menuCtrl.open();
       }

@@ -20,19 +20,22 @@ import { GlobalVarsService } from './services/globalVars/global-vars.service';
 import { VerbgroupsService } from './services/libs/verbgroups/verbgroups.service';
 import { ConjugationService } from './services/libs/conjugation/conjugation.service';
 import { CurrentViewServiceService } from './services/currentViewService/current-view-service.service';
+import { GetStartedModalPage } from './pages/common/group-finder/get-started-modal/get-started-modal.page';
 
 @NgModule({
   declarations: [
     AppComponent,
+    GetStartedModalPage
   ],
   entryComponents: [
-    
+    GetStartedModalPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+
     IonicStorageModule.forRoot(),
     FormsModule,
     ReactiveFormsModule

@@ -1,5 +1,7 @@
 {
   "name": "transition-finnish-verbs",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
