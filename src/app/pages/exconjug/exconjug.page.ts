@@ -48,7 +48,12 @@ export class ExconjugPage implements OnInit {
 
   constructor(private navCtrl: NavController, private router: Router,private route:ActivatedRoute, private http: Http, public  currentView: CurrentViewServiceService,
               public alertCtrl: AlertController,public conjug:ConjugationService ,public verbGroup:VerbgroupsService) {
-      this.lesson_number=this.route.snapshot.params['id'];
+      
+     let a = this.route.snapshot.params['id'];
+     let b =Number(a);
+     this.lesson_number=b+1;
+      console.log(typeof(this.lesson_number));
+      console.log(typeof(b));
       this.list_verb_full=[];
       this.list_verb_half=[];
       this.list_verb_conjugate=[];

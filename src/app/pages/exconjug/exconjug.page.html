@@ -7,12 +7,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding >
-  <ion-buttons class="ion-padding-start">
-          <button [disabled]="!display_help_button" (click)="help()" class="btn-style fill" ion-button outline>HELP</button>
+<ion-content padding>
+  <ion-buttons>
+          <button [disabled]="!display_help_button" slot = "end" (click)="help()" class="btn-style fill" ion-button outline>HELP</button>
 
   </ion-buttons>
-  <ion-grid>
+  <ion-grid class="slide ion-justify-content-center" style="width: 100 !important;">
 
       <ion-row align-items-start class="div-slide-conjug">
         

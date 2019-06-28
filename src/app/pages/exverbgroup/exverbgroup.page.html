@@ -8,9 +8,9 @@
 </ion-header>
 
 <ion-content padding >
-  <ion-grid>
+  <ion-grid class="">
     <ion-row align-items-start class="div-slide-word" class="div-slide-conjug">
-      <ion-slides (ionSlideDidChange)="randomButton(good_answer)">
+      <ion-slides (ionSlideDidChange)="randomButton(good_answer)" style="justify-content: space-evenly !important;">
       <ion-slide *ngFor="let verb of display_verb; let i=index" >
         <h1>{{verb}}</h1>
         <p class="trad-ex">{{display_trans[i]}}</p>

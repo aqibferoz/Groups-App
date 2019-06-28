@@ -140,7 +140,7 @@
     position:inherit;
     padding-top :2%;
     display: inline-block;
-    width:100%;
+    width:100% !important;
     font-size: large;
     border-top: 2px dashed #A9A9A9;
   }
@@ -150,6 +150,7 @@
     text-align:center;
     margin-bottom:10%;
     margin-top:2%;
+    margin: auto !important;
   }
 
   .level-ex {
