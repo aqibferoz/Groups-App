@@ -4,7 +4,7 @@ ion-toolbar{
     --background: rgb(56, 126, 245) !important;
     --color: white !important;
         // --background: var(--ion-toolbar-background,var(--ion-color-step-50,rgb(206, 73, 73)));
-        
+
     }
     .toolbar-title{
         font-weight: 600 !important;
@@ -40,10 +40,10 @@ ion-toolbar{
         background: transparent !important;
         color: rgb(10, 168, 231) !important;
         border-radius: 5px !important;
-         
+
     }
     ion-label{
-        height: 50px !important; 
+        height: 50px !important;
         // border: 1px solid !important;
         font-weight: 400 !important;
         // padding: 1px 5px 5px 10px !important;
@@ -58,7 +58,7 @@ ion-toolbar{
         background: transparent !important;
         color: rgb(10, 168, 231) !important;
         border-radius: 5px !important;
-     
+
     }
     .ion-padding-start, [padding-start] {
         padding-left: unset;
@@ -84,7 +84,7 @@ ion-toolbar{
 
 .search-item {
     //padding: 10px 0 10px;
-     border-bottom: 1px #dedede !important; 
+     border-bottom: 1px #dedede !important;
      //--border-color: var(--ion-color-danger, #f1453d) !important ;
      .item-inner {
         border-bottom: none !important;
@@ -101,7 +101,7 @@ ion-toolbar{
     max-width: 200px;
     margin-top: 28px !important;
     pointer-events: none;
-    padding: 0 10px 0 0 !important; 
+    padding: 0 10px 0 0 !important;
     color: #808080a6 !important;
     --highlight-color-valid: var(--ion-color-primary,#10dc60) !important;
 }
@@ -110,10 +110,16 @@ ion-toolbar{
     margin-top: 28px !important;
     pointer-events: none;
     color: #808080a6 !important;
-    padding: 0 10px 0 0 !important;   
+    padding: 0 10px 0 0 !important;
 }
 .ion-item {
    // --highlight-color-valid: #000000 !important;
    // box-shadow: #000000 !important;
     --border-color: var(--ion-color-danger, #f1453d) !important ;
 }
+// .item-input.input-has-focus::after{
+//     border-bottom-color: #387ef5;
+//   }
+  .item-interactive.item-has-focus{
+    --highlight-background: #387ef5;
+  }
